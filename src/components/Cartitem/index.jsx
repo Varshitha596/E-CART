@@ -6,12 +6,12 @@ const CartItem = props => {
     title,
     price,
     quantity,
-    imageUrl
+    imageUrl,
   } = props
 
   return (
 
-    <div className="cart-item-container">
+    <div className="cart-item">
 
       <img
         src={imageUrl}
@@ -26,7 +26,7 @@ const CartItem = props => {
         </h1>
 
         <p className="cart-price">
-          ₹ {price}
+          ₹{price}
         </p>
 
         <p className="cart-quantity">

@@ -6,55 +6,57 @@ import { useState } from 'react';
 import SidebarItem from '../SidebarItem'
 import Products from '../productsDropdown'
 const Sidebar = () => {
-const [siderbar,setsiderbar]=useState(false)
+  const [siderbar, setsiderbar] = useState(false)
 
-const toggler=()=>{
-setsiderbar(!siderbar)
-}
+  const toggler = () => {
+    setsiderbar(!siderbar)
+  }
 
 
   return (
-    <div className="sidebar-container">
+    <div className="navbar-container">
 
-      <div className="top-section">
-        <button className="menu-btn" onClick={toggler}>
-        {siderbar ? <GoSidebarCollapse className='logo-image'/>:<GoSidebarExpand className='logo-image'/>}
+      <button
+        className="menu-btn"
+        onClick={toggler}
+      >
+        {siderbar
+          ? <GoSidebarCollapse />
+          : <GoSidebarExpand />
+        }
+      </button>
 
+      <h1 className="logo-heading">
+        Cabot Webstersoo
+      </h1>
 
-        </button>
-
-        <h1 className="logo">
-          Cabot Websters
-        </h1>
-      </div>
-
-{siderbar && ( <div className="sidebar-menu">
-
-  
-
-        <div className="logo-section">
-         <AiFillDingtalkCircle className='logo-image'/>
-          
-
-          <h2>Cabot Webster</h2>
-        </div>
-
-        <ul className="menu-items">
-
-          <SidebarItem title="Home" />
-
-          <SidebarItem title="about" />
-
-         <SidebarItem title="cart" />
-       
-           <Products/>
-
+     {siderbar && (
+             <div className="sidebar-menu">
      
-
-        </ul>
-
-      </div>)}
      
+     
+             <div className="logo-section">
+               <AiFillDingtalkCircle className='logo-image' />
+     
+     
+               <h2>Cabot Webster</h2>
+             </div>
+     
+             <ul className="menu-items">
+     
+               <SidebarItem title="Home" />
+     
+               <SidebarItem title="about" />
+     
+               <SidebarItem title="cart" />
+     
+               <Products />
+     
+     
+     
+             </ul>
+     
+           </div>)}
     </div>
   )
 }

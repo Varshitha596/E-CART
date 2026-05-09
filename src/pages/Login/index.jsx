@@ -61,7 +61,7 @@ const Login = () => {
           />
 
           <label className="input-label">
-            Password
+            gupth chavi
           </label>
 
           <input

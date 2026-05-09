@@ -1,17 +1,17 @@
 .electronics-container {
   min-height: 100vh;
-  display: flex;
-  background-color: #0f172a;
+  background-color: #04112b;
   color: white;
 }
 
 .electronics-content {
-  padding: 30px;
-  width: 100%;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .electronics-heading {
-  font-size: 36px;
+  font-size: 52px;
   margin-bottom: 30px;
 }
 

@@ -1,20 +1,53 @@
 .about-container {
   min-height: 100vh;
-  display: flex;
-  background-color: #0f172a;
+  background-color: #04112b;
   color: white;
 }
 
 .about-content {
-  padding: 30px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .about-heading {
+  font-size: 52px;
+  margin-bottom: 30px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.about-description {
+  font-size: 20px;
+  line-height: 1.8;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.mission-heading {
   font-size: 36px;
   margin-bottom: 20px;
 }
 
-.about-description {
+.mission-description {
+  font-size: 20px;
+  line-height: 1.8;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.explore-btn {
+  width: 220px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3b82f6;
+  color: white;
   font-size: 18px;
-  line-height: 1.7;
+  cursor: pointer;
 }

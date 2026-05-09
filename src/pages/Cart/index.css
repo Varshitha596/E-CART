@@ -1,17 +1,17 @@
 .cart-container {
   min-height: 100vh;
-  display: flex;
-  background-color: #0f172a;
+  background-color: #04112b;
   color: white;
 }
 
 .cart-content {
-  padding: 30px;
-  width: 100%;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .cart-heading {
-  font-size: 36px;
+  font-size: 52px;
   margin-bottom: 30px;
 }
 

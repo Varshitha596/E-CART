@@ -11,7 +11,22 @@ const Home = () => {
 
       <div className="home-content">
 
-        <h1>Home Page</h1>
+        <h1 className="home-heading">
+          Welcome to E-Store
+        </h1>
+
+        <p className="home-description">
+
+          Discover amazing fashion,
+          electronics
+          products.....!!
+          ONLY IF U DONT HAVE WORK..
+
+        </p>
+
+        <button className="shop-btn">
+          Shop Now
+        </button>
 
       </div>
 

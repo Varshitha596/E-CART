@@ -1,0 +1,21 @@
+.products-container {
+  min-height: 100vh;
+  background-color: #04112b;
+  color: white;
+}
+
+.products-content {
+
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.products-heading {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.products-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
