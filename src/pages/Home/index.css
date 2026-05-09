@@ -1,0 +1,10 @@
+.home-container {
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: white;
+  display: flex;
+}
+
+.home-content {
+  padding: 30px;
+}

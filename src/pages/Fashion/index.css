@@ -1,0 +1,22 @@
+.fashion-container {
+  min-height: 100vh;
+  display: flex;
+  background-color: #0f172a;
+  color: white;
+}
+
+.fashion-content {
+  padding: 30px;
+  width: 100%;
+}
+
+.fashion-heading {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.fashion-products {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}

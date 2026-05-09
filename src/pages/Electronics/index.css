@@ -1,0 +1,22 @@
+.electronics-container {
+  min-height: 100vh;
+  display: flex;
+  background-color: #0f172a;
+  color: white;
+}
+
+.electronics-content {
+  padding: 30px;
+  width: 100%;
+}
+
+.electronics-heading {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.electronics-products {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}

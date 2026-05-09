@@ -1,0 +1,22 @@
+.cart-container {
+  min-height: 100vh;
+  display: flex;
+  background-color: #0f172a;
+  color: white;
+}
+
+.cart-content {
+  padding: 30px;
+  width: 100%;
+}
+
+.cart-heading {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.cart-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

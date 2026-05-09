@@ -1,0 +1,40 @@
+.cart-item-container {
+  display: flex;
+  gap: 30px;
+  background-color: #1e293b;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width:370px;
+}
+
+.cart-image {
+  width:200px;
+  border-radius: 10px;
+}
+
+.cart-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cart-title {
+  font-size: 22px;
+}
+
+.cart-price,
+.cart-quantity {
+  margin-top: 10px;
+}
+
+.remove-btn {
+  margin-top: 15px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
