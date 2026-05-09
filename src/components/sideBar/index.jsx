@@ -43,13 +43,25 @@ const Sidebar = () => {
              </div>
      
              <ul className="menu-items">
-     
-               <SidebarItem title="Home" />
-     
-               <SidebarItem title="about" />
-     
-               <SidebarItem title="cart" />
-     
+     <SidebarItem
+  title="Home"
+  path="/"
+/>
+
+<SidebarItem
+  title="About"
+  path="/about"
+/>
+
+<SidebarItem
+  title="Products"
+  path="/products"
+/>
+
+<SidebarItem
+  title="Cart"
+  path="/cart"
+/>
                <Products />
      
      

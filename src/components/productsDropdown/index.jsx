@@ -1,5 +1,5 @@
 import './index.css'
-
+import {Link} from 'react-router-dom'
 const Products = () => {
   return (
     <li className="products-container">
@@ -8,19 +8,28 @@ const Products = () => {
         Products
       </p>
 
-      <ul className="dropdown-items">
+<ul className="dropdown-items">
 
-        <li className="dropdown-item">
-          Fashion
-        </li>
+  <li>
+    <Link
+      to="/fashion"
+      className="dropdown-link"
+    >
+      Fashion
+    </Link>
+  </li>
 
-        <li className="dropdown-item">
-          Electronics
-        </li>
+  <li>
+    <Link
+      to="/electronics"
+      className="dropdown-link"
+    >
+      Electronics
+    </Link>
+  </li>
 
-        <li className="dropdown-item">
-          Daily Wear
-        </li>
+
+
 
       </ul>
 

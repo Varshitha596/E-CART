@@ -1,39 +1,47 @@
 .login-container {
   min-height: 100vh;
   display: flex;
-  background-color: #ffffff;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdHTtG22uKl7eQio3Ms26A36pBPouLrJOi4A&s');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 }
 
-.image-section {
-  width: 50%;
-}
+/* .image-section {
+background-image: url('https://static.vecteezy.com/system/resources/thumbnails/052/423/838/small/soft-blue-gradient-sky-background-abstract-free-vector.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height:80vh;
+width:60vw;
+margin: 20vh;
+border-radius: 20px;
+} */
 
-.login-image {
-  width: 90%;
-  height: 70vh;
-margin-top: 100px;
-  border-radius: 10px;
-
-}
 
 .form-section {
-  width: 50%;
+  width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .login-form {
-  width: 350px;
-  background-color: #1e293b;
+  width: 410px;
+  background-color: transparent;
   padding: 30px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  margin-top: 10vw;
+  margin-left: 40vw;
 }
 
 .login-heading {
-  color: white;
+  color: rgb(148, 148, 148);
   text-align: center;
   margin-bottom: 30px;
   font-size: 40px;
@@ -41,8 +49,9 @@ margin-top: 100px;
 }
 
 .input-label {
-  color: white;
+  color: rgb(60, 60, 60);
   margin-bottom: 8px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .input-field {
@@ -51,11 +60,12 @@ margin-top: 100px;
   border-radius: 6px;
   border: none;
   outline: none;
+  color: #8cb5f7;
 }
 
 .login-btn {
-  background-color: #3b82f6;
-  color: white;
+  background-color: #87d1fc;
+  color: rgb(130, 130, 130);
   border: none;
   padding: 12px;
   border-radius: 6px;

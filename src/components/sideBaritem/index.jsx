@@ -1,13 +1,24 @@
+import {Link} from 'react-router-dom'
+
 import './index.css'
 
 const SidebarItem = props => {
 
-  const {title} = props
+  const {title, path} = props
 
   return (
+
     <li className="sidebar-item">
-      {title}
+
+      <Link
+        to={path}
+        className="nav-link"
+      >
+        {title}
+      </Link>
+
     </li>
+
   )
 }
 
