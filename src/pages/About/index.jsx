@@ -7,46 +7,72 @@ const About = () => {
 
     <div className="about-container">
 
-      <Sidebar />
+      <Sidebar className="sidebarhome"/>
 
       <div className="about-content">
+<h1 className='about-heading '>ABOUT US</h1>
+      <div className="offer-section">
 
-        <h1 className="about-heading">
-          About Us
-        </h1>
+  <img
+   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNmJzyFS70SGx2hm6kcGGC67ayjLp4S0UCw&s"
+    alt="shopping"
+    className="offer-image"
+  />
 
-        <img
-          src="https://images.unsplash.com/photo-1472851294608-062f824d29cc"
-          alt="about"
-          className="about-image"
-        />
+  <div className="offer-content">
 
-        <p className="about-description">
+    <h1 className="offer-title">
+      Mega Fashion Sale
+    </h1>
 
-          Welcome to Cabot Webstersoo.
-          We provide high-quality fashion,
-          electronics, daily wear products,
-          and many more amazing collections
-          at affordable prices.
+    <p className="offer-description">
 
-        </p>
+      Discover premium fashion collections
+      with exclusive discounts up to 50%.
+      Modern styles, elegant looks,
+      and affordable pricing.
 
-        <h2 className="mission-heading">
-          Our Mission
-        </h2>
+    </p>
 
-        <p className="mission-description">
+    <button className="offer-button">
+      Explore Deals
+    </button>
 
-          Our mission is to create
-          a simple and modern shopping
-          experience for everyone.
+  </div>
 
-        </p>
+</div>
 
-        <button className="explore-btn">
-          Explore Products
-        </button>
 
+<div className="offer-section reverse-section">
+
+  <img
+       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT49VjldxB3H1ecYioJ53a9cxYGO_FLxSg1zQ&s"
+
+    alt="electronics"
+    className="offer-image"
+  />
+
+  <div className="offer-content">
+
+    <h1 className="offer-title">
+      Smart Electronics Offers
+    </h1>
+
+    <p className="offer-description">
+
+      Upgrade your lifestyle with
+      premium gadgets, smart watches,
+      headphones, and latest technology products.
+
+    </p>
+
+    <button className="offer-button">
+      View Products
+    </button>
+
+  </div>
+
+</div>
       </div>
 
     </div>

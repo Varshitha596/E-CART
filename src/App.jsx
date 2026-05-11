@@ -1,5 +1,9 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
+import {useState} from 'react'
+
+import CartContext from './context/CartContext'
+
 import Home from './pages/Home'
 import Products from './pages/Products'
 import Cart from './pages/Cart'
@@ -8,45 +12,65 @@ import Fashion from './pages/Fashion'
 import Electronics from './pages/Electronics'
 import Login from './pages/Login'
 
-const App=()=>{
+
+const App = () => {
+
+  const [cartItems, setCartItems] = useState([])
+
   return (
-    <BrowserRouter>
-    <Routes>
-       <Route
-          path="/"
-          element={<Home />}
-        />
-         <Route
-          path="/login"
-          element={<Login />}
-        />
 
-        <Route
-          path="/products"
-          element={<Products />}
-        />
+    <CartContext.Provider
+      value={{
+        cartItems,
+        setCartItems,
+      }}
+    >
 
-        <Route
-          path="/cart"
-          element={<Cart />}
-        />
+      <BrowserRouter>
 
-        <Route
-          path="/about"
-          element={<About />}
-        />
+        <Routes>
 
-        <Route
-          path="/fashion"
-          element={<Fashion />}
-        />
+          <Route
+            path="/"
+            element={<Home />}
+          />
 
-        <Route
-          path="/electronics"
-          element={<Electronics />}
-        />
-    </Routes>
-    </BrowserRouter>
+          <Route
+            path="/login"
+            element={<Login />}
+          />
+
+          <Route
+            path="/products"
+            element={<Products />}
+          />
+
+          <Route
+            path="/cart"
+            element={<Cart />}
+          />
+
+          <Route
+            path="/about"
+            element={<About />}
+          />
+
+          <Route
+            path="/fashion"
+            element={<Fashion />}
+          />
+
+          <Route
+            path="/electronics"
+            element={<Electronics />}
+          />
+
+        </Routes>
+
+      </BrowserRouter>
+
+    </CartContext.Provider>
+
   )
 }
 

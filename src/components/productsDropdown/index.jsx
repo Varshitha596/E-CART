@@ -10,7 +10,7 @@ const Products = () => {
 
 <ul className="dropdown-items">
 
-  <li>
+  <li id="dropdown-item">
     <Link
       to="/fashion"
       className="dropdown-link"
@@ -19,7 +19,7 @@ const Products = () => {
     </Link>
   </li>
 
-  <li>
+  <li className="dropdown-item">
     <Link
       to="/electronics"
       className="dropdown-link"

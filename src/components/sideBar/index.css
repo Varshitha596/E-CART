@@ -1,7 +1,9 @@
 .navbar-container {
-  position: relative;
-  padding: 20px;
-  color: white;
+  position: absolute;
+  top: 20px;
+  left: 70px;
+  z-index: 1000;
+ 
 }
 
 .menu-btn {
@@ -16,10 +18,7 @@
   position: absolute;
   top: 80px;
   left: 0;
-
+background-color: rgb(117, 123, 121);
   width: 260px;
-  min-height: 100vh;
-
-  background-color: #38bdf8;
   padding: 20px;
 }

@@ -1,9 +1,12 @@
 .product-card {
-  width: 220px;
-  background-color: #1e293b;
+  width: 250px;
+  background-color: #060606;
   color: white;
   padding: 20px;
   border-radius: 10px;
+margin-left: 30px;
+margin-top: 10px;
+ box-shadow: 20px 20px 20px rgba(3, 200, 207, 0.3);
 }
 
 .product-image {
@@ -12,21 +15,28 @@
 }
 
 .product-title {
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 10px;
+  font-family:  'Gill Sans MT', Calibri;
 }
 
 .product-price {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
 .cart-btn {
-  background-color: #3b82f6;
+  background-color: #c9ab50;
   color: white;
   border: none;
   padding: 10px;
   width: 100%;
   border-radius: 6px;
   cursor: pointer;
+ 
+  transition: 0.3s;
+}
+.cart-btn:hover{
+  background-color: #887335;
+  transform: scale(1.05);
 }

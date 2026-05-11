@@ -1,4 +1,4 @@
-.products-container {
+/* .products-container {
   list-style-type: none;
   margin-bottom: 20px;
 }
@@ -21,4 +21,52 @@
 .dropdown-link {
   text-decoration: none;
   color: white;
+} */
+
+.products-container {
+  list-style-type: none;
+  margin-bottom: 20px;
+ 
+}
+
+.products-title {
+  font-size: 22px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  
+}
+
+#dropdown-items {
+  list-style-type: none;
+
+  padding: 16px;
+
+  margin-top: 10px;
+
+  background-color: transparent;
+
+  border-radius: 12px;
+
+  width: 180px;
+}
+
+.dropdown-item {
+  margin-bottom: 14px;
+  background-color: transparent;
+ 
+}
+
+.dropdown-link {
+  text-decoration: none;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.dropdown-link:hover {
+  color: #38bdf8;
 }

@@ -1,4 +1,5 @@
 import Sidebar from '../../components/Sidebar'
+import { AiFillDingtalkCircle } from "react-icons/ai";
 
 import './index.css'
 
@@ -10,7 +11,7 @@ const Home = () => {
       <Sidebar />
 
       <div className="home-content">
-
+   <AiFillDingtalkCircle className='logo'/>
         <h1 className="home-heading">
           Welcome to E-Store
         </h1>
@@ -18,9 +19,8 @@ const Home = () => {
         <p className="home-description">
 
           Discover amazing fashion,
-          electronics
-          products.....!!
-          ONLY IF U DONT HAVE WORK..
+          electronics <br/>
+        <span className='span'>ONLY IF U DONT HAVE WORK..</span>  
 
         </p>
 

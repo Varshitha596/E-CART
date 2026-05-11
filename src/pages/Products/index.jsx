@@ -1,10 +1,56 @@
 import Sidebar from '../../components/Sidebar'
-
+import Loader from '../../components/Loader'
 import ProductCard from '../../components/ProductCard'
+import {useContext} from 'react'
+import CartContext from '../../context/CartContext'
+import {useEffect, useState} from 'react'
 
 import './index.css'
 
+
 const Products = () => {
+
+  const [productsList, setProductsList] = useState([])
+const [searchInput, setSearchInput] = useState('')
+  const [isLoading, setIsLoading] = useState(true)
+const {cartItems, setCartItems} = useContext(CartContext)
+console.log(cartItems)
+const filteredProducts = productsList.filter(
+  eachProduct =>eachProduct.title.toLowerCase().includes(searchInput.toLowerCase())
+)
+
+const onClickAddToCart = product => {
+
+  setCartItems(prevState => [
+    ...prevState,
+    product,
+  ])
+
+}
+
+  const getProducts = async () => {
+
+    const response = await fetch(
+      'https://fakestoreapi.com/products'
+    )
+
+    const data = await response.json()
+
+    console.log(data)
+
+    setProductsList(data)
+
+    setIsLoading(false)
+  }
+
+
+  useEffect(() => {
+
+    getProducts()
+
+  }, [])
+
+
   return (
 
     <div className="products-container">
@@ -16,35 +62,52 @@ const Products = () => {
         <h1 className="products-heading">
           Products
         </h1>
+<input
+  type="search"
+  placeholder="Search Products"
+  className="search-input"
+  value={searchInput}
+  onChange={event =>
+    setSearchInput(event.target.value)
+  }
+/>
+       <div className="products-list">
 
-        <div className="products-list">
+  {
+    isLoading ? (
+
+      <Loader />
+
+    ) : (
+
+      filteredProducts.length === 0 ? (
+
+        <p className="no-products">
+          No Products Found
+        </p>
+
+      ) : (
+
+        filteredProducts.map(eachProduct => (
 
           <ProductCard
-            title="Nike Shoes"
-            price="2500"
-            imageUrl="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+            key={eachProduct.id}
+            title={eachProduct.title}
+            price={eachProduct.price}
+            imageUrl={eachProduct.image}
+             onClickAddToCart={() =>
+    onClickAddToCart(eachProduct)
+  }
           />
 
-          <ProductCard
-            title="Smart Watch"
-            price="4000"
-            imageUrl="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
-          />
+        ))
 
-          <ProductCard
-            title="Headphones"
-            price="3000"
-            imageUrl="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
-          />
+      )
 
-          <ProductCard
-            title="Backpack"
-            price="1800"
-            imageUrl="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
-          />
+    )
+  }
 
-        </div>
-
+</div>
       </div>
 
     </div>

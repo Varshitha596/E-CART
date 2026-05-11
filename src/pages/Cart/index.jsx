@@ -1,10 +1,14 @@
 import Sidebar from '../../components/Sidebar'
 
 import CartItem from '../../components/CartItem'
+import {useContext} from 'react'
 
+import CartContext from '../../context/CartContext'
 import './index.css'
 
-const Cart = () => {
+const Cart = () =>
+   {
+    const {cartItems} = useContext(CartContext)
   return (
 
     <div className="cart-container">
@@ -18,7 +22,18 @@ const Cart = () => {
         </h1>
 
         <div className="cart-items-list">
+{
+  cartItems.map(eachItem => (
 
+    <CartItem
+      key={eachItem.id}
+      title={eachItem.title}
+      price={eachItem.price}
+      imageUrl={eachItem.image}
+    />
+
+  ))
+}
           <CartItem
             title="Nike Shoes"
             price="2500"

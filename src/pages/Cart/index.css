@@ -1,7 +1,9 @@
 .cart-container {
   min-height: 100vh;
-  background-color: #04112b;
+  background-color: #000001;
   color: white;
+  
+
 }
 
 .cart-content {
@@ -19,4 +21,13 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.empty-cart {
+  color: white;
+
+  font-size: 34px;
+
+  margin-top: 50px;
+
+  font-family: "Poppins", sans-serif;
 }

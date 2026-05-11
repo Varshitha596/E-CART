@@ -1,7 +1,7 @@
 import './index.css'
 import { GoSidebarExpand } from "react-icons/go";
 import { GoSidebarCollapse } from "react-icons/go";
-import { AiFillDingtalkCircle } from "react-icons/ai";
+//import { AiFillDingtalkCircle } from "react-icons/ai";
 import { useState } from 'react';
 import SidebarItem from '../SidebarItem'
 import Products from '../productsDropdown'
@@ -26,9 +26,7 @@ const Sidebar = () => {
         }
       </button>
 
-      <h1 className="logo-heading">
-        Cabot Webstersoo
-      </h1>
+     
 
      {siderbar && (
              <div className="sidebar-menu">
@@ -36,7 +34,7 @@ const Sidebar = () => {
      
      
              <div className="logo-section">
-               <AiFillDingtalkCircle className='logo-image' />
+            
      
      
                <h2>Cabot Webster</h2>
@@ -47,7 +45,10 @@ const Sidebar = () => {
   title="Home"
   path="/"
 />
-
+<SidebarItem
+  title="Login"
+  path="/login"
+/>
 <SidebarItem
   title="About"
   path="/about"
