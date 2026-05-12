@@ -7,6 +7,7 @@ const CartItem = props => {
     price,
     quantity,
     imageUrl,
+    onClickRemove,
   } = props
 
   return (
@@ -33,7 +34,7 @@ const CartItem = props => {
           Quantity: {quantity}
         </p>
 
-        <button className="remove-btn">
+        <button className="remove-btn" onClick={onClickRemove}>
           Remove
         </button>
 

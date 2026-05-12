@@ -1,8 +1,10 @@
 .cart-container {
   min-height: 100vh;
-  background-color: #000001;
+  /* background-color: #000001; */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJkn1Bup1_2kKECVUjoudH4w-V9mpUMBGzdQ&s');
   color: white;
-  
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
@@ -13,8 +15,11 @@
 }
 
 .cart-heading {
-  font-size: 52px;
+  font-size: 72px;
   margin-bottom: 30px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular',  Geneva, Verdana, sans-serif;
+  color: rgb(80, 44, 89);
+  text-shadow: 1px 1px 0px rgb(117, 87, 123);
 }
 
 .cart-items-list {
@@ -30,4 +35,19 @@
   margin-top: 50px;
 
   font-family: "Poppins", sans-serif;
+}
+.total-container {
+  margin-top: 40px;
+
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+.total-heading {
+  color: rgb(1, 100, 187);
+
+  font-size: 33px;
+
+  font-family:  sans-serif;
 }

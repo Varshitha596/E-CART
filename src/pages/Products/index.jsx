@@ -20,11 +20,33 @@ const filteredProducts = productsList.filter(
 )
 
 const onClickAddToCart = product => {
+  const productExists = cartItems.find(
+    eachItem => eachItem.id === product.id
+  )
+  if (productExists) {
+    const updatedCart = cartItems.map(
+      eachItem => {
+        if(eachItem.id === product.id) {
+          return {
+            ...eachItem,
+            quantity: eachItem.quantity + 1,
+          }
+        }
+        return eachItem
+      }
+    )
+    setCartItems(updatedCart)
+  } else {
+    const newProduct = {
+      ...product,
+      quantity: 1,
+    }
+    setCartItems(prevState => [
+      ...prevState,
+      newProduct,
+    ])
 
-  setCartItems(prevState => [
-    ...prevState,
-    product,
-  ])
+  }
 
 }
 
