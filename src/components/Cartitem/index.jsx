@@ -8,6 +8,8 @@ const CartItem = props => {
     quantity,
     imageUrl,
     onClickRemove,
+     onIncrement,
+     onDecrement,
   } = props
 
   return (
@@ -33,7 +35,27 @@ const CartItem = props => {
         <p className="cart-quantity">
           Quantity: {quantity}
         </p>
+<div className="quantity-container">
 
+  <button
+    className="quantity-btn"
+    onClick={onDecrement}
+  >
+    -
+  </button>
+
+  <p className="quantity-value">
+    {quantity}
+  </p>
+
+  <button
+    className="quantity-btn"
+    onClick={onIncrement}
+  >
+    +
+  </button>
+
+</div>
         <button className="remove-btn" onClick={onClickRemove}>
           Remove
         </button>
