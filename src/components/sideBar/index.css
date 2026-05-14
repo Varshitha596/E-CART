@@ -3,9 +3,7 @@
   top: 20px;
   left: 70px;
   z-index: 1000;
- 
 }
-
 .menu-btn {
   background: transparent;
   border: none;
@@ -13,12 +11,31 @@
   font-size: 30px;
   cursor: pointer;
 }
-
 .sidebar-menu {
   position: absolute;
   top: 80px;
   left: 0;
-background-color: rgb(117, 123, 121);
-  width: 260px;
+background-color: rgb(10, 9, 9);
+border-radius:5px;
+  width: 200px;
+    text-align: center;
   padding: 20px;
+}
+
+.logout-btn {
+  margin-top: 30px;
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2e0707;
+  color: white;
+  
+  font-size: 18px;
+  cursor: pointer;
+}
+.menu-items{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  text-align: center;
 }
